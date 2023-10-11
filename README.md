@@ -39,7 +39,27 @@ No notebook data-visualization.ipynb, encontra-se um trabalho de visualização 
 No início do notebook model-training.ipynb, tem-se o tratamento dos dados, além da divisão do dataset entre parte de treinamento e parte de testes. Logo depois, é efetuado o treinamento dos modelos com os algoritmos XGBoost, RandomForest e Decision Tree. Por fim, os modelos gerados são exportados, permitindo seu compartilhamento e uso em outros locais.
 
 ## Resultados
-Todos os três modelos apresentam uma acurácia de **100%**.
+Todos os três modelos apresentam uma acurácia de **100%**. Essa métrica, a matriz de confusão e o classification report são exibidos nesta imagem:
+
+![](https://github.com/Lucasbnas435/ML-Mushroom-Classification/blob/master/src/docs/results.png?raw=true)
+
+## Estrutura de Pastas
+```
+.
+├── README.md
+└── src
+    ├── dataset
+    │   └── mushrooms.csv
+    ├── docs
+    │   └── results.png
+    ├── models
+    │   ├── DecisionTreeModel.joblib
+    │   ├── RandomForestModel.joblib
+    │   └── XGBoostModel.json
+    └── notebooks
+        ├── data-visualization.ipynb
+        └── model-training.ipynb
+```
 
 ## Fonte dos Dados
 https://www.kaggle.com/datasets/uciml/mushroom-classification
